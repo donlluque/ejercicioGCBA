@@ -64,6 +64,5 @@ def delete_station(id):
         else:
             return jsonify({'message': 'Error al borrar Estacion'}), 404
         
-
     except Exception as ex:
         return jsonify({'message': str(ex)}), 500
